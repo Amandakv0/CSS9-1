@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainDivWrapper{
+    display: flex;
+}
+.leftSideBarMainDiv{
+    display: flex;
+    width: 100%;
+    max-width: 296px;
+    background-color: #14171F;
+    padding: 24px;
+    gap: 48px;
+    flex-direction: column;
+}
+
+.mainContentDivWrapper{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+    max-width: 1140px;
+    padding: 32px;
+}
+.mainContentDiv{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 32px;
+}
+.mainLogoDiv{
+    padding-bottom: 16px;
+    border-bottom: 1px solid #3D414B;
+}
+.richardDiv{
+    padding: 12px;
+    border-top: 1px solid #7D70BD;
+    border-bottom: 1px solid #7D70BD;
+    display: flex;
+    align-items: center;
+    width: 248px;
+    justify-content: space-between;
+}
+.richardMainDiv{
+    display: flex;
+    gap: 8px;
+}
+.richardTextsDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.whiteText{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+.greyText{
+    color: #929699;
+    font-size: 14px;
+}
+.navigationDiv{
+    display: flex;
+    gap: 20px;    
+    flex-direction: column;
+}
+.navMiniDIvs{
+    display: flex;
+    gap: 12px;
+}
+.greyBiggerText{
+    color: #929699;
+    font-size: 16px;
+}
+.miniDivNav{
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0px;
+    gap: 20px;
+    border-top: 1px solid #929699;
+    border-bottom: 1px solid #929699;
+}
+.settingsFrame{
+    display: flex;
+    width: 253px;
+    align-self: flex-end;
+    border-radius: 8px;
+    justify-content: center;
+    border: 1px solid #7B62FF;
+    padding: 12px 24px;
+    align-items: center;
+}
+a{
+    text-decoration-line: none ;
+}
+.purpleText{
+    color: #7B62FF;
+    font-size: 16px;
+}
+
+.headerNavBar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.navigationTexts{
+    display: flex;
+    gap: 24px;
+}
+.blackText{
+    font-size: 16px;
+    color: #2F2F2F;
+}
+.navBarFramesDiv{
+    display: flex;
+    gap: 10px;
+}
+.topHeaderMainFrame{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    border: none;
+    background-color: transparent;
+    width: 144px;
+}
+.blackTextSmaller{
+    color: #2F2F2F;
+    font-size: 14px;
+}
+.whiteTextSmaller{
+    color: #FFF;
+    font-size: 14px;
+}
+.greyFrame{
+    padding: 8px 12px;
+    border-radius: 50px;
+    border: 1px solid #C7C7C7;
+    background-color: #F7F7F7;
+}
+.onlyGreyFrame{
+    padding: 8px 12px;
+    border-radius: 50px;
+    border: 1px solid #C7C7C7;
+}
+.onlyGreyFrame:hover{
+    background-color: purple;
+}
+.backgroundMainImg{
+    width: 1080px;
+    height: 228px;
+    border-radius: 8px;
+    border: 1px solid #C7C7C7;
+    padding: 66px 0px 66px 40px;
+    background-image: url("../images/mainImg.svg");
+}
+.blackBigText{
+    color: #2F2F2F;
+    font-size: 40px;
+    width: 416px;
+    font-weight: 600;
+}
+.miniFramesDiv{
+    display: flex;
+    gap: 16px;
+}
+.black{
+    background-color: #14171F;
+}
+.personalInfromationMainDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    gap: 22px;
+    border-radius: 16px;
+    border: 1px solid #C7C7C7;
+    padding: 24px;
+}
+.informationTextsDiv{
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    gap: 2px;2
+}
+.blackTextNorm{
+    color: #14171F;
+    font-size: 16px;
+    font-weight: 500;
+}
+.naemeEmailDiv{
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+.fullNameDiv{
+    gap: 8px;
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+}
+.emailDiv{
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.nameInput:hover{
+    border-radius: 8px;
+    border: 1px solid #7B62FF;
+    background-color: #E6E1FF;
+    box-shadow: 0px 4px 4px 0px rgba(123, 98, 255, 0.25);
+}
+.nameInput{
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #C7C7C7;
+    background-color: #F9FBFC;
+}
+.numberInput{
+    width: 250px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #C7C7C7;
+    background-color: #F9FBFC;
+}
+.numberFramesDiv{
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+.blackNumberFrame{
+    width: 68px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #C7C7C7;
+    background-color: #14171F;
+}
+::placeholder{
+    color: #666;
+    font-size: 14px;
+}
+.saveButtonDiv{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.saveButton{
+    border-radius: 8px;
+    background: #7F56D9;
+    padding: 10px 24px;
+}
+.mainContainerDiv{
+    display: flex;
+    width: 100%;
+    gap: 32px;
+}
+.firstColumnFrames{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 32px;
+    max-width: 702px;
+}
+.secondPersonalInformationMainDiv{
+    display: flex;
+    width: 100%;
+    gap: 24px;
+}
+.personalInformationSecondDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 432px;
+    gap: 22px;
+    padding: 24px 24px 30px 24px;
+    border-radius: 16px;
+    border: 1px solid #C7C7C7;
+}
+.apartmentDiv{
+    display: flex;
+    width: 100%;
+    gap: 24px;
+}
+.miniApartmentDivs{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.miniApartmentDivs{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+.apartmentTextsDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.singleApartmentDiv{
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+.additionalInformationDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    max-width: 246px;
+    padding: 28px 16px 25px 16px;
+    border-radius: 16px;
+    border: 1px solid #C7C7C7;
+}
+.additionalInfoDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.resumeDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+.bold{
+    font-weight: 800px;
+}
+.additionalLinksDiv{
+    display: flex;
+    width: 100%;
+    gap: 8px;
+}
+.additionalLinksDivMain{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+.socailsSelectFrame{
+    width: 122px;
+    border-radius: 8px;
+    border: 1px solid #C7C7C7;
+    background-color: #F9FBFC;
+    padding: 12px 16px;
+}
+.httpsInput{
+    width: 84px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #C7C7C7;
+    background-color: #F9FBFC;
+}
+.rightAvatarInformationDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 346px;
+    border-radius: 16px;
+    border: 16px solid #14171F;
+}
+.andrioRichardDiv, .locationDiv, .aboutDiv{
+    padding: 16px;
+    width: 100%;
+    max-width: 314px;
+    border-radius: 12px;
+    border-bottom: 12px solid #14171F;
+}
+.avatarMainDiv{
+    display: flex;
+    width: 100%;
+    gap: 47px;
+    align-items: flex-start;
+}
+.editAndOtherIconDIv{
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+.andrioName{
+    display: flex;
+    width: 100%;
+    color: #2F2F2F;
+    font-size: 24px;
+    font-weight: 500;
+    justify-content: center;
+    margin-top: 8px;
+}
+.AndrioFrames{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    margin-top: 10px;
+}
+.greyFFrame{
+    border-radius: 50px;
+    border: 1px solid #C7C7C7;
+    padding: 8px 12px;
+}
