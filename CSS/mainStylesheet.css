@@ -5,15 +5,66 @@
 }
 .mainDivWrapper{
     display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1400px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .mainDivWrapper{
+        width: 100%;
+        max-width: 768px;
+        padding: 32px;
+    }
+}
+@media screen and (max-width: 767px){
+    .mainDivWrapper{
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
 .leftSideBarMainDiv{
     display: flex;
     width: 100%;
     max-width: 296px;
     background-color: #14171F;
     padding: 24px;
-    gap: 48px;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .leftSideBarMainDiv{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px){
+    .leftSideBarMainDiv{
+        display: none;
+    }
+}
+
+.burgerLogo{
+    display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .burgerLogo{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .burgerLogo{
+        display: flex;
+    }
+}
+.sideBarDIvWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 48px;
 }
 
 .mainContentDivWrapper{
@@ -24,11 +75,26 @@
     max-width: 1140px;
     padding: 32px;
 }
+@media screen and(min-width: 768px) and (max-wodth: 1024px){
+    .mainContentDivWrapper{
+        width: 100%;
+        max-width: 768px;
+    }
+}
+
 .mainContentDiv{
     display: flex;
     width: 100%;
+    max-width: 1144px;
     flex-direction: column;
     gap: 32px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .mainContentDiv{
+        gap: 24px;
+        width: 100%;
+        max-width: 768px;
+    }
 }
 .mainLogoDiv{
     padding-bottom: 16px;
@@ -82,15 +148,22 @@
     border-top: 1px solid #929699;
     border-bottom: 1px solid #929699;
 }
+.settingsFrame:hover{
+    background-color: purple;
+}
 .settingsFrame{
     display: flex;
     width: 253px;
-    align-self: flex-end;
     border-radius: 8px;
     justify-content: center;
     border: 1px solid #7B62FF;
     padding: 12px 24px;
     align-items: center;
+}
+.settingsDivWrapper{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
 }
 a{
     text-decoration-line: none ;
@@ -103,14 +176,21 @@ a{
 .headerNavBar{
     display: flex;
     width: 100%;
+    align-items: center;
     justify-content: space-between;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .headerNavBar{
+        gap: 24px;
+    }
 }
 .navigationTexts{
     display: flex;
     gap: 24px;
+    align-items: center;
 }
 .blackText{
-    font-size: 16px;
+    font-size: 14px;
     color: #2F2F2F;
 }
 .navBarFramesDiv{
@@ -119,6 +199,8 @@ a{
 }
 .topHeaderMainFrame{
     display: flex;
+    align-items: center;
+    width: 100%;
     justify-content: space-between;
 }
 button{
@@ -148,13 +230,33 @@ button{
 .onlyGreyFrame:hover{
     background-color: purple;
 }
+.numberInput:hover{
+    border-radius: 8px;
+    border: 1px solid #7B62FF;
+    background-color: #E6E1FF;
+    box-shadow: 0px 4px 4px 0px rgba(123, 98, 255, 0.25);
+}
 .backgroundMainImg{
-    width: 1080px;
+    width: 100%;
+    max-width: 1080px;
     height: 228px;
     border-radius: 8px;
     border: 1px solid #C7C7C7;
     padding: 66px 0px 66px 40px;
     background-image: url("../images/mainImg.svg");
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .backgroundMainImg{
+        background-image: url("../images/backgroundSecondImg.svg");
+        width: 680px;
+        height: 228px;
+    }
+}
+
+@media screen and(min-width: 768px) and (max-width: 1024px){
+    .mainContentDiv{
+        gap: 24px;
+    }
 }
 .blackBigText{
     color: #2F2F2F;
@@ -165,6 +267,13 @@ button{
 .miniFramesDiv{
     display: flex;
     gap: 16px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .miniFramesDiv{
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 608px;
+    }
 }
 .black{
     background-color: #14171F;
@@ -190,20 +299,33 @@ button{
     font-size: 16px;
     font-weight: 500;
 }
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
 .naemeEmailDiv{
     display: flex;
+    flex-direction: column;
     width: 100%;
     gap: 16px;
     margin-bottom: 8px;
 }
+.emailsInputSWrapper{
+    display: flex;
+    gap: 16px;
+}
 .fullNameDiv{
     gap: 8px;
-    width: 327px;
+    width: 100%;
+    max-width: 327px;
     display: flex;
     flex-direction: column;
 }
 .emailDiv{
-    width: 327px;
+    width: 100%;
+    max-width: 327px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -259,12 +381,25 @@ button{
     width: 100%;
     gap: 32px;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .mainContainerDiv{
+        flex-direction: column;
+        width: 100%;
+        max-width: 704px;
+    }
+}
 .firstColumnFrames{
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 32px;
     max-width: 702px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .firstColumnFrames{
+        order: 2;
+        width: 100%;
+    }
 }
 .secondPersonalInformationMainDiv{
     display: flex;
@@ -286,15 +421,20 @@ button{
     width: 100%;
     gap: 24px;
 }
-.miniApartmentDivs{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .apartmentDiv{
+        border-radius: 12px;
+        background: #F9FBFC;
+        padding: 16px;
+        width: 100%;
+        max-width: 408px;
+    }
 }
 .miniApartmentDivs{
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 40px;
 }
 .apartmentTextsDiv{
     display: flex;
@@ -305,6 +445,12 @@ button{
     display: flex;
     gap: 12px;
     align-items: flex-start;
+}
+.logoEdit:hover{
+    background-color: lightgoldenrodyellow;
+}
+.BigAvatar:hover{
+    
 }
 .additionalInformationDiv{
     display: flex;
@@ -361,19 +507,32 @@ button{
     width: 100%;
     max-width: 346px;
     border-radius: 16px;
-    border: 16px solid #14171F;
+    background-color: #14171F;
+    padding: 16px;
+    gap: 12px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .rightAvatarInformationDiv{
+        width: 100%;
+        max-width: 704px;
+    }
 }
 .andrioRichardDiv, .locationDiv, .aboutDiv{
     padding: 16px;
     width: 100%;
-    max-width: 314px;
-    border-radius: 12px;
-    border-bottom: 12px solid #14171F;
+    background-color: #FFF;
+    border-radius: 16px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .andrioRichardDiv{
+        width: 100%;
+        max-width: 672px;
+    }
 }
 .avatarMainDiv{
     display: flex;
     width: 100%;
-    gap: 47px;
+    justify-content: space-between;
     align-items: flex-start;
 }
 .editAndOtherIconDIv{
@@ -392,12 +551,44 @@ button{
 }
 .AndrioFrames{
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
     width: 100%;
+    gap: 15px;
     margin-top: 10px;
 }
 .greyFFrame{
     border-radius: 50px;
     border: 1px solid #C7C7C7;
     padding: 8px 12px;
+    flex: 1;
+}
+.greyFFrame:hover{
+    border-radius: 8px;
+    border: 1px solid #7B62FF;
+    background-color: #E6E1FF;
+    box-shadow: 0px 4px 4px 0px rgba(123, 98, 255, 0.25);
+}
+.locationDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.locationTextsDiv{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.locationSelect{
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #C7C7C7;
+    background-color: #F9FBFC;
+}
+.textFrameDiv{
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #C7C7C7;
 }
