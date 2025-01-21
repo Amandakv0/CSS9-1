@@ -5,15 +5,11 @@
 }
 .mainDivWrapper{
     display: flex;
-    justify-content: center;
     width: 100%;
-    max-width: 1400px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
     .mainDivWrapper{
-        width: 100%;
-        max-width: 768px;
         padding: 32px;
     }
 }
@@ -54,6 +50,11 @@
         display: flex;
     }
 }
+@media screen and (max-width: 767px) {
+    .burgerLogo{
+        display: flex;
+    }
+}
 
 @media screen and (max-width: 767px){
     .burgerLogo{
@@ -72,7 +73,6 @@
     justify-content: center;
     gap: 32px;
     width: 100%;
-    max-width: 1140px;
     padding: 32px;
 }
 @media screen and(min-width: 768px) and (max-wodth: 1024px){
@@ -184,14 +184,24 @@ a{
         gap: 24px;
     }
 }
+@media screen and (max-width: 767px) {
+    .headerNavBar{
+        gap: 12px;
+    }
+}
 .navigationTexts{
     display: flex;
     gap: 24px;
     align-items: center;
 }
 .blackText{
-    font-size: 14px;
+    font-size: 16px;
     color: #2F2F2F;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .blackText{
+        font-size: 14px;
+    }
 }
 .navBarFramesDiv{
     display: flex;
@@ -203,6 +213,16 @@ a{
     width: 100%;
     justify-content: space-between;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .topHeaderMainFrame{
+        gap: 45px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .topHeaderMainFrame{
+        flex-direction: column;
+    }
+}
 button{
     border: none;
     background-color: transparent;
@@ -211,6 +231,11 @@ button{
 .blackTextSmaller{
     color: #2F2F2F;
     font-size: 14px;
+}
+@media screen and (max-width: 767px) {
+    .blackTextSmaller{
+        font-size: 12px;
+    }
 }
 .whiteTextSmaller{
     color: #FFF;
@@ -222,10 +247,20 @@ button{
     border: 1px solid #C7C7C7;
     background-color: #F7F7F7;
 }
+@media screen and (max-width: 767px) {
+    .greyFrame{
+        padding: 4px 8px;
+    }
+}
 .onlyGreyFrame{
     padding: 8px 12px;
     border-radius: 50px;
     border: 1px solid #C7C7C7;
+}
+@media screen and (max-width: 767px) {
+    .onlyGreyFrame{
+        padding: 4px 8px;
+    }
 }
 .onlyGreyFrame:hover{
     background-color: purple;
