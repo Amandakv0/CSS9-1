@@ -16,7 +16,6 @@
 @media screen and (max-width: 767px){
     .mainDivWrapper{
         width: 100%;
-        max-width: 320px;
     }
 }
 
@@ -79,6 +78,11 @@
     .mainContentDivWrapper{
         width: 100%;
         max-width: 768px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .mainContentDivWrapper{
+        padding: 12px 16px;
     }
 }
 
@@ -181,12 +185,12 @@ a{
 }
 @media screen and (min-width: 768px) and (max-width: 1024px){
     .headerNavBar{
-        gap: 24px;
+        justify-content: space-between;
     }
 }
 @media screen and (max-width: 767px) {
     .headerNavBar{
-        gap: 12px;
+        justify-content: space-between;
     }
 }
 .navigationTexts{
@@ -203,14 +207,21 @@ a{
         font-size: 14px;
     }
 }
+@media screen and (max-width: 767px) {
+    .blackText{
+        font-size: 12px;
+    }
+}
 .navBarFramesDiv{
     display: flex;
     gap: 10px;
 }
+
 .topHeaderMainFrame{
     display: flex;
     align-items: center;
     width: 100%;
+    max-width: 1080px;
     justify-content: space-between;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -221,12 +232,14 @@ a{
 @media screen and (max-width: 767px) {
     .topHeaderMainFrame{
         flex-direction: column;
+        gap: 12px;
+        
     }
 }
 button{
     border: none;
     background-color: transparent;
-    width: 144px;
+    max-width: 144px;
 }
 .blackTextSmaller{
     color: #2F2F2F;
@@ -274,23 +287,33 @@ button{
 .backgroundMainImg{
     width: 100%;
     max-width: 1080px;
+    background-repeat: no-repeat;
     height: 228px;
     border-radius: 8px;
     border: 1px solid #C7C7C7;
     padding: 66px 0px 66px 40px;
     background-image: url("../images/mainImg.svg");
+    background-size: cover;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px){
     .backgroundMainImg{
         background-image: url("../images/backgroundSecondImg.svg");
-        width: 680px;
+        width: 100%;
         height: 228px;
+        background-size: cover;
     }
 }
 
-@media screen and(min-width: 768px) and (max-width: 1024px){
-    .mainContentDiv{
-        gap: 24px;
+@media screen and (max-width: 767px){
+    .backgroundMainImg{
+        background-image: url("../images/thirdsBackImg.svg");
+        background-size: cover;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 220px;
     }
 }
 .blackBigText{
@@ -298,6 +321,11 @@ button{
     font-size: 40px;
     width: 416px;
     font-weight: 600;
+}
+@media screen and (max-width: 767px) {
+    .blackBigText{
+        font-size: 24px;
+    }
 }
 .miniFramesDiv{
     display: flex;
@@ -308,6 +336,12 @@ button{
         flex-wrap: wrap;
         width: 100%;
         max-width: 608px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .miniFramesDiv{
+        width: 100%;
+        flex-wrap: wrap;
     }
 }
 .black{
@@ -323,11 +357,27 @@ button{
     border: 1px solid #C7C7C7;
     padding: 24px;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .personalInfromationMainDiv{
+        width: 100%;
+        min-width: 768px
+    }
+}
+@media screen and (max-width: 767px) {
+    .personalInfromationMainDiv{
+        padding: 24px 16px;
+    }
+}
 .informationTextsDiv{
     display: flex;
     flex-direction: column;
     width: 255px;
-    gap: 2px;2
+    gap: 2px;
+}
+@media screen and (max-width: 767px) {
+    .informationTextsDiv{
+        width: 100%;
+    }
 }
 .blackTextNorm{
     color: #14171F;
@@ -340,6 +390,7 @@ button{
     gap: 16px;
     width: 100%;
 }
+
 .naemeEmailDiv{
     display: flex;
     flex-direction: column;
@@ -350,6 +401,11 @@ button{
 .emailsInputSWrapper{
     display: flex;
     gap: 16px;
+}
+@media screen and (max-width: 767px) {
+    .emailsInputSWrapper{
+        flex-direction: column;
+    }
 }
 .fullNameDiv{
     gap: 8px;
@@ -384,6 +440,11 @@ button{
     border-radius: 8px;
     border: 1px solid #C7C7C7;
     background-color: #F9FBFC;
+}
+@media screen and (max-width: 767px) {
+    .numberInput{
+        width: 100%;
+    }
 }
 .numberFramesDiv{
     display: flex;
@@ -420,7 +481,11 @@ button{
     .mainContainerDiv{
         flex-direction: column;
         width: 100%;
-        max-width: 704px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .mainContainerDiv{
+        flex-direction: column;
     }
 }
 .firstColumnFrames{
@@ -434,12 +499,29 @@ button{
     .firstColumnFrames{
         order: 2;
         width: 100%;
+        min-width: 768px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .firstColumnFrames{
+        flex-direction: column;
     }
 }
 .secondPersonalInformationMainDiv{
     display: flex;
     width: 100%;
     gap: 24px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .secondPersonalInformationMainDiv{
+        min-width: 768px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .secondPersonalInformationMainDiv{
+        flex-direction: column;
+    }
 }
 .personalInformationSecondDiv{
     display: flex;
@@ -450,6 +532,13 @@ button{
     padding: 24px 24px 30px 24px;
     border-radius: 16px;
     border: 1px solid #C7C7C7;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .personalInformationSecondDiv{
+        flex-grow: 1;
+        min-width: 434px;
+        padding: 24px 16px;
+    }
 }
 .apartmentDiv{
     display: flex;
@@ -463,6 +552,11 @@ button{
         padding: 16px;
         width: 100%;
         max-width: 408px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .apartmentDiv{
+        flex-direction: column;
     }
 }
 .miniApartmentDivs{
@@ -497,6 +591,19 @@ button{
     border-radius: 16px;
     border: 1px solid #C7C7C7;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .additionalInformationDiv{
+        flex-grow: 1;
+        min-width: 246px;
+        padding: 24px 16px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .additionalInformationDiv{
+        width: 100%;
+        max-width: 767px;
+    }
+}
 .additionalInfoDiv{
     display: flex;
     width: 100%;
@@ -514,7 +621,7 @@ button{
 .additionalLinksDiv{
     display: flex;
     width: 100%;
-    gap: 8px;
+    justify-content: space-between;
 }
 .additionalLinksDivMain{
     display: flex;
@@ -529,12 +636,23 @@ button{
     background-color: #F9FBFC;
     padding: 12px 16px;
 }
+@media screen and (max-width: 767px) {
+    .socailsSelectFrame{
+        width: 100%;
+    }
+}
 .httpsInput{
     width: 84px;
     padding: 12px 16px;
     border-radius: 8px;
     border: 1px solid #C7C7C7;
     background-color: #F9FBFC;
+}
+@media screen and (max-width: 767px) {
+    .httpsInput{
+        width: 100%;
+        padding: 8px 12px;
+    }
 }
 .rightAvatarInformationDiv{
     display: flex;
@@ -549,7 +667,14 @@ button{
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .rightAvatarInformationDiv{
         width: 100%;
-        max-width: 704px;
+        min-width: 768px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .rightAvatarInformationDiv{
+        order: -3;
+        width: 100%;
+        max-width: 767px;
     }
 }
 .andrioRichardDiv, .locationDiv, .aboutDiv{
@@ -561,7 +686,6 @@ button{
 @media screen and (min-width: 768px) and (max-width: 1024px){
     .andrioRichardDiv{
         width: 100%;
-        max-width: 672px;
     }
 }
 .avatarMainDiv{
